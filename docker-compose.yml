@@ -1,10 +1,8 @@
-version: '3.6'
 services:
   iris:
     build:
       context: .
       dockerfile: Dockerfile
-#      target: final
     restart: always
     command: --check-caps false --ISCAgent false
     ports:
